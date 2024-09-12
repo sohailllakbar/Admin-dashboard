@@ -1,0 +1,183 @@
+/* css for the parent-container */
+.parent__container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    background-color: rgb(54, 35, 121);
+  }
+  
+  .form__container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* css for the input field */
+  .input__name {
+    outline: none;
+    width: 100%;
+    height: 6vh;
+    font-size: 22px;
+  }
+  .input__email {
+    outline: none;
+    width: 100%;
+    height: 6vh;
+    font-size: 22px;
+  }
+  
+  .input__password {
+    outline: none;
+    width: 100%;
+    height: 6vh;
+    font-size: 22px;
+  }
+  
+  /* style for the input feilds */
+  .input__id {
+    outline: none;
+    width: 100%;
+    color: white;
+    height: 6vh;
+    font-size: 22px;
+    border: none;
+    background-color: #ffffff2d;
+    border-bottom: 1px solid #fff;
+  }
+  
+  
+  .input__name{
+    outline: none;
+    width: 100%;
+    color: white;
+    height: 6vh;
+    font-size: 22px;
+    border: none;
+    background-color: #ffffff2d;
+    border-bottom: 1px solid #fff;
+  }
+  
+  .input__email{
+    outline: none;
+    width: 100%;
+    color: white;
+    height: 6vh;
+    font-size: 22px;
+    border: none;
+    background-color: #ffffff2d;
+    border-bottom: 1px solid #fff;
+  }
+  
+  
+  .input__phone__no{
+    outline: none;
+    width: 100%;
+    color: white;
+    height: 6vh;
+    font-size: 22px;
+    border: none;
+    background-color: #ffffff2d;
+    border-bottom: 1px solid #fff;
+  }
+  
+  
+  .input__address{
+    outline: none;
+    width: 100%;
+    color: white;
+    height: 6vh;
+    font-size: 22px;
+    border: none;
+    background-color: #ffffff2d;
+    border-bottom: 1px solid #fff;
+  }
+  
+  
+  
+  
+  .input__id__box {
+    display: flex;
+    column-gap: 15px;
+  }
+  
+  /* css for the btn  */
+  .btn__form {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    width: 300px;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 8px 32px;
+    border-radius: 50px;
+    margin: 10px;
+    color: #fff;
+    background: #2c528c;
+    transition: 0.5s;
+    list-style: none;
+    text-decoration: none;
+    margin-top: 24px;
+  }
+
+  .btn__container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 44px;
+  }
+  
+  .btn__form:hover {
+    background-color: rgb(140, 0, 255);
+    cursor: pointer;
+  }
+  
+  /* css for the all label  */
+  .label {
+    display: block;
+    font-size: 22px;
+  }
+  
+  /* css for the box container of input field */
+  .box {
+    margin: 19px;
+  }
+  
+  /* css for the  text heading  ...put user information */
+  .form__heading {
+    text-align: center;
+    color: #fff;
+  }
+
+
+  .input__style__condition{
+    border-bottom: 1px solid red;
+  }
+
+  .name__message{
+    position: absolute;
+    left: 51%;
+    top: 16%;
+    color: red;
+  }
+
+  .input__style__email{
+    border-bottom: 1px solid red;
+
+  }
+
+  .input__phone__condition{
+    border-bottom: 1px solid red;
+
+  }
+
+  .input__id__condition {
+    border-bottom: 1px solid red;
+    color: red;
+  }
+
+  .email__error__message{
+    color: red;
+    position: absolute;
+    top: 28%;
+  }

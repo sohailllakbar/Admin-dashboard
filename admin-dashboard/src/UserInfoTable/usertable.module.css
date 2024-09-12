@@ -1,0 +1,175 @@
+.heading__edit{
+    color: red;
+}
+
+.parent__fullcontainer{
+  position: relative;
+  width: 100%;
+  background: linear-gradient(to right, #c94b4b, #6f1d1b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.create__btn{
+  background-color: #28a745;
+  border-radius: 20px;
+  width: 220px;
+  height: 6vh;
+}
+.create__btn:hover{
+  background-color: #2a9242b0;
+}
+
+
+.edit__btn{
+  border-radius: 11px;
+  width: 100px;
+  margin-left: 15px;
+  margin-right: 11px;
+  margin-bottom: 1px;
+  background-color: #007bff;
+}
+
+.delete__btn{
+  border-radius: 11px;
+  width: 100px;
+  background-color: #007bff;
+}
+
+.delete__btn:hover{
+  background-color: #e4352fce;
+}
+
+
+
+.edit__btn:hover{
+  background-color: #007bffad;
+}
+
+.edit__parent__container{
+  position: absolute;
+  top: 30%;
+}
+
+.edit__form__heading{
+  color: white;
+}
+
+.edit__parent__container{
+    width: 80%;
+   
+
+    align-items: center;
+    display: flex;
+    row-gap: 13px;
+    flex-direction: column;
+    background-color: rgba(67, 49, 131, 0.87);
+}
+.btn__container{
+    margin: 12px 0px;
+}
+
+.editclss{
+  opacity: 0.5;
+}
+.edit__form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 12px;
+}
+
+.input__parent__box{
+    display: flex;
+    column-gap: 14px;
+}
+
+.input__id{
+    outline: none;
+  width: 100%;
+  color: white;
+  height: 4vh;
+  border: none;
+  background-color: #ffffff2d;
+  border-bottom: 1px solid #fff;
+}
+
+.input__name{
+    outline: none;
+    width: 100%;
+    color: white;
+    height: 4vh;
+    border: none;
+    background-color: #ffffff2d;
+    border-bottom: 1px solid #fff;
+  }
+  
+  .input__email{
+    outline: none;
+    width: 100%;
+    color: white;
+    height: 4vh;
+    border: none;
+    background-color: #ffffff2d;
+    border-bottom: 1px solid #fff;
+  }
+  
+  
+  .input__phone__no{
+    outline: none;
+    width: 100%;
+    color: white;
+    height: 4vh;
+    border: none;
+    background-color: #ffffff2d;
+    border-bottom: 1px solid #fff;
+  }
+  
+  
+  .input__address{
+    outline: none;
+    width: 100%;
+    color: white;
+    height: 4vh;
+    border: none;
+    background-color: #ffffff2d;
+    border-bottom: 1px solid #fff;
+  }
+  
+  .name__style{
+    border-bottom: 1px solid red;
+  }
+
+  .email__style{
+    border-bottom: 1px solid red;
+
+  }
+
+  .phone__style{
+    border-bottom: 1px solid red;
+
+  }
+
+  .confimation__container{
+    position: absolute;
+    background-color: white;
+    width: 300px;
+    top: 35%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 130px;
+  }
+
+  .confirmation__heading{
+margin-top: 22px;
+  }
+
+  .confirmation__button__box{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 22px;
+    margin-bottom: 22px;
+  }
