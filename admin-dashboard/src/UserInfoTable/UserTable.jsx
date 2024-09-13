@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { Edit, Delete, Create } from "../redux-store/slices/UserInfo";
 import styles from "./usertable.module.css";
 import { Link } from "react-router-dom";
+import { MdOutlineFilterListOff } from "react-icons/md";
 
 const UserTable = () => {
   const userData = useSelector((state) => state.userdata);
@@ -12,6 +13,12 @@ const UserTable = () => {
     /*----------functions for the validatio----------------*/
   }
 
+  // STATE FOR THE INPUT SEARCH
+  const [searchValue, setSearchValue] = useState("");
+
+  const handleChange = (e) => {
+    setSearchValue(e.target.value);
+  };
   function validName(name) {
     return /^[a-zA-Z\s]*$/.test(name);
   }
@@ -70,21 +77,15 @@ const UserTable = () => {
     setIsdelete(true);
   };
 
-  const handleOnCancel = ()=>{
+  const handleOnCancel = () => {
+    setIsdelete(false);
+  };
 
-    setIsdelete(false)
+  const handledelete = () => {
+    dispatch(Delete(currentUser));
 
-
-
-  }
-
-  const handledelete = () =>{
-
-    dispatch(Delete(currentUser))
-
-    setIsdelete(false)
-
-  }
+    setIsdelete(false);
+  };
   {
     /*------------functions for getting value and show error style on the validation-------------*/
   }
@@ -117,12 +118,33 @@ const UserTable = () => {
     }
   };
 
+  // function to filter value according to input search value;
+
+  const displayedUserData = userData.filter((user) => {
+    return (
+      user.email.toLowerCase().includes(searchValue.toLowerCase()) ||
+      user.name.toLowerCase().includes(searchValue.toLowerCase())
+    );
+  });
+
+  const mainData = searchValue ? displayedUserData : userData;
+
   return (
     <div className={styles.parent__fullcontainer}>
+      <div className={styles.search__container}>
+        <input
+          className={styles.input__search}
+          value={searchValue}
+          type="text"
+          placeholder="filter by name or email"
+          onChange={handleChange}
+        />
+        <MdOutlineFilterListOff className={styles.seach__icon} />
+      </div>
       <table
         className={`table table-dark custom__table ${
           editform ? styles.editclss : ""
-        }`}
+        } ${isDelete ? styles.this__style__opacity : ''}`}
       >
         <thead style={{ backgroundColor: "red !important" }}>
           <tr style={{ "--bs-table-bg": "#432818" }}>
@@ -133,7 +155,7 @@ const UserTable = () => {
             <th scope="col">Address</th>
           </tr>
         </thead>
-        {userData.map((user) => {
+        {mainData.map((user) => {
           return (
             <tbody key={user.id}>
               <tr style={{ "--bs-table-bg": "none" }}>
@@ -242,8 +264,18 @@ const UserTable = () => {
             Are you sure to delete this User
           </p>
           <div className={styles.confirmation__button__box}>
-            <button onClick={()=>handleOnCancel()} className={styles.cancel__button}>cancel</button>
-            <button onClick={() =>handledelete()} className={styles.delete__button}>delete</button>
+            <button
+              onClick={() => handleOnCancel()}
+              className={styles.cancel__button}
+            >
+              cancel
+            </button>
+            <button
+              onClick={() => handledelete()}
+              className={styles.delete__button}
+            >
+              delete
+            </button>
           </div>
         </div>
       )}

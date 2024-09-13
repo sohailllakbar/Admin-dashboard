@@ -152,6 +152,35 @@
 
   }
 
+  .input__search{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: transparent;
+    width: 200px;
+    border-left: 1px solid white;
+    padding-left: 12px;
+    color: white;
+    margin-right: 14px;
+
+  }
+
+  .this__style__opacity{
+    opacity: 0.5;
+  }
+  .seach__icon{
+color: white;
+width: 66px;
+height: 44px;
+  }
+
+  .search__container{
+    display: flex;
+    margin-bottom: 22px;
+    align-items: center;
+    width: 800px;
+  }
+
   .confimation__container{
     position: absolute;
     background-color: white;
