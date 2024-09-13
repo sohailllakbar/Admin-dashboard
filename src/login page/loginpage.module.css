@@ -1,0 +1,103 @@
+.login__parent__container {
+    display: flex;
+    width: 100%;
+    height: 90vh;
+    background-color: white;
+  justify-content: center; 
+    flex-direction: column;
+    align-items: center;
+   
+   
+  }
+  
+  .amazon__logo__image {
+    width: 150px;
+    height: 90px;
+  }
+  .login__form__container {
+    display: flex;
+    width: 330px;
+    flex-direction: column;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+     /* width: 300px;  */
+    padding: 20px;
+    margin-bottom: 50px;
+    margin-right: 10px;
+    margin-left: 10px;
+    height: 55vh;
+  
+    min-width: 120px;
+  }
+  
+  .email__label {
+    display: block;
+    font-size: 22px;
+  }
+  
+  .input__field {
+    height: 30px;
+    position: relative;
+    margin-bottom: 10px;
+    background-color: white;
+    width: 98%;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+  
+  .password__field {
+    height: 30px;
+    margin-bottom: 10px;
+    background-color: white;
+    width: 98%;
+  }
+
+  .error__message{
+    color: red;
+  }
+  
+  .email__container {
+    margin: 10px 10px;
+  }
+  
+  .password__container {
+    margin: 10px 10px;
+  }
+  
+  .password__label {
+    display: block;
+    font-size: 22px;
+  }
+  
+  .sign__heading {
+    text-align: center;
+    color: #f1b213;
+  }
+  
+  .login__btn {
+    background: #f1b213;
+    font-size: 15px;
+    border-radius: 2px;
+    width: 100%;
+    height: 30px;
+    border: 1px solid;
+    margin-top: 10px;
+    border-color: #a88734 #9c7e31 #846a29;
+    cursor: pointer;
+  }
+  
+  .create__heading {
+    text-align: center;
+  }
+  .create__acount__text {
+    text-align: center;
+  }
+  
+  .toggle__btn {
+    cursor: pointer;
+    width: 100%;
+    height: 30px;
+  }
+  
+  
+  
