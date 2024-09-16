@@ -1,0 +1,103 @@
+.parent__container__sidebar{
+    width: 222px;
+    height: 88vh;
+    background-color:#6f1d1b;
+}
+
+.user__profile__image{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.admin__text__heading{
+    text-align: center;
+    padding-top: 17px;
+    font-size: 22px;
+    color: white;
+    font-weight: 200;
+    margin-bottom: 33px;
+}
+
+.user__profile__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user__profile__intro{
+    font-size: 16px;
+    margin-top: -4px;
+    color: #0fa1c5;
+}
+
+.user__profile__name{
+    font-size: 17px;
+    margin-top: 6px;
+    color: white;
+}
+
+
+.dashboard__text{
+    text-align: center;
+    color: #868dfb;
+}
+
+
+
+
+.user__link{
+    display: flex;
+    align-items: center;
+    
+}
+
+.user__icon{
+    height: 42px;
+
+    margin-bottom: 15px;
+    margin-right: 8px;
+    color: #fff;
+}
+
+.user__icon__box{
+    margin-top: 22px;
+}
+
+.link{
+    text-decoration: none;
+}
+
+.user__table__link{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.table__icon{
+    margin-right: 8px;
+    margin-bottom: 15px;
+height: 44px;
+    color: #fff;
+}
+
+.usertable__text:hover{
+    color: rgba(255, 255, 255, 0.774);
+}
+
+.userdata__text:hover{
+    color: rgba(255, 255, 255, 0.774);
+
+}
+
+.userdata__text{
+    color: aliceblue;
+}
+
+.table__icon{
+    color: white;
+}
+
+
+.usertable__text{
+    color: white;
+}
